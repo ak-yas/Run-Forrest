@@ -198,3 +198,54 @@ hr {
   margin-block-start: -150px;
   margin-inline-start: -150px;
 }
+
+/* Meetups */
+
+#meetups {
+  background: url('http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/dublin-city.png')
+    no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+  block-size: 300px;
+}
+
+.card {
+  color: #fafafa;
+  background-color: rgba(0, 0, 0, 0.6);
+  float: left;
+  inline-size: 19.4%;
+  margin-inline: 5.5px;
+  text-align: center;
+  padding-block-start: 30px;
+  padding-inline-start: 10px;
+  block-size: 100%;
+}
+
+.card h2 {
+  color: #fafafa;
+  font-size: 250%;
+}
+
+.card h3 {
+  font-size: 150%;
+  font-weight: bold;
+}
+
+footer {
+  block-size: 150px;
+}
+
+.socials {
+  text-align: center;
+}
+
+.socials li {
+  display: inline;
+}
+
+.socials i {
+  font-size: 180%;
+  padding: 5%;
+  margin: 1%;
+  color: #777;
+}
