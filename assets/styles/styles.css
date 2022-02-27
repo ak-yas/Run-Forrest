@@ -35,7 +35,6 @@ h2 {
 }
 
 header {
-  padding: 20px;
   line-height: 75px;
   color: #555;
 }
@@ -43,6 +42,7 @@ header {
 #logo {
   float: left;
   font-size: 280%;
+  margin-inline-start: 30px;
 }
 
 #menu {
@@ -123,6 +123,7 @@ header {
 
 #club-ethos h2 {
   color: #555;
+  font-size: 125%;
 }
 
 #left-about {
@@ -138,7 +139,7 @@ header {
 }
 
 #ethos-title {
-  font-size: 280%;
+  font-size: 280% !important;
   text-align: center;
   color: #555;
   margin-block-start: 25px;
@@ -206,24 +207,24 @@ hr {
     no-repeat center;
   background-size: cover;
   overflow: hidden;
-  block-size: 300px;
+  inline-size: 100%;
 }
 
 .card {
   color: #fafafa;
   background-color: rgba(0, 0, 0, 0.6);
   float: left;
-  inline-size: 19.4%;
-  margin-inline: 5.5px;
+  inline-size: 19.7%;
+  block-size: 300px;
+  margin: 2px;
   text-align: center;
   padding-block-start: 30px;
-  padding-inline-start: 10px;
-  block-size: 100%;
+  padding-inline: 10px;
 }
 
 .card h2 {
   color: #fafafa;
-  font-size: 250%;
+  font-size: 200%;
 }
 
 .card h3 {
@@ -248,4 +249,140 @@ footer {
   padding: 5%;
   margin: 1%;
   color: #777;
+}
+
+#gallery {
+  clear: both;
+  line-height: 0;
+  column-count: 4;
+  column-gap: 0;
+  margin: 20px;
+}
+
+#gallery img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1400px) {
+  #ethos-title {
+    padding: 30px;
+    margin-block-start: 0;
+  }
+  #club-ethos {
+    inline-size: 65%;
+    block-size: 1200px;
+    margin-inline: auto;
+  }
+  #left-about {
+    float: right;
+    inline-size: 100%;
+    padding: 0;
+  }
+  #right-about {
+    clear: right;
+    inline-size: 100%;
+    padding: 0;
+  }
+  #center-about {
+    clear: both;
+    inline-size: 100%;
+    padding: 0;
+  }
+  .left-about-heading h2 {
+    margin-block-end: 5px;
+  }
+  .right-about-heading h2 {
+    margin-block-end: 5px;
+  }
+  hr {
+    display: none;
+  }
+
+  .card {
+    clear: both;
+    inline-size: 100%;
+    block-size: 150%;
+    border: 1px solid #fff;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  #menu {
+    clear: left;
+    float: left;
+    margin-block-end: 20px;
+    line-height: 25px;
+  }
+  #cover-text {
+    left: 0;
+  }
+
+  #club-ethos {
+    inline-size: 100%;
+    block-size: 1100px;
+    margin-inline: auto;
+  }
+  .left-about-heading,
+  .right-about-heading {
+    inline-size: inherit;
+  }
+
+  .left-about-heading h2,
+  .right-about-heading h2 {
+    inline-size: 100%;
+    text-align: center;
+  }
+
+  .left-about-heading p,
+  .right-about-heading p {
+    inline-size: 80%;
+    text-align: left;
+    margin-inline: auto;
+    padding-inline: 20px;
+  }
+
+  #meetups {
+    inline-size: 100vw;
+  }
+
+  #gallery {
+    column-count: 3;
+    column-gap: 10px;
+    margin: 30px;
+  }
+
+  #gallery img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #club-ethos {
+    block-size: 1200px;
+  }
+  #gallery {
+    column-count: 2;
+    column-gap: 10px;
+    margin: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #menu li {
+    font-size: 85%;
+  }
+
+  #club-ethos {
+    block-size: 1400px;
+  }
+
+  #gallery {
+    column-count: 1;
+    margin: 30px;
+  }
+
+  #gallery img {
+    margin-block-start: 10px;
+  }
 }
